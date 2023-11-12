@@ -1,137 +1,147 @@
 ## Аттестация
 {
-	"info": {
-		"_postman_id": "f8cda841-5a8a-468a-800b-d6e0ab29dc51",
-		"name": "New Collection",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "26460349",
-		"_collection_link": "https://www.postman.com/lively-capsule-999012/workspace/githab/collection/26460349-f8cda841-5a8a-468a-800b-d6e0ab29dc51?action=share&source=collection_link&creator=26460349"
-	},
-	"item": [
+	"id": "4aeae3ff-eace-4f55-9e44-88bd9b313587",
+	"name": "New Collection",
+	"timestamp": "2023-11-11T21:49:51.014Z",
+	"collection_id": "26460349-f8cda841-5a8a-468a-800b-d6e0ab29dc51",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-11-11T21:49:49.349Z",
+	"totalFail": 4,
+	"results": [
 		{
+			"id": "c80f1b0f-305e-4cae-8bca-0e74dfb9fd4f",
 			"name": "Issue 1",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{URL}}issues?apiVersion=2022-11-28&label=bag&assignee=maria.malova@mail.ru&Cookie=token_global={{token_global}}#about-issues.",
-					"host": [
-						"{{URL}}issues"
-					],
-					"query": [
-						{
-							"key": "apiVersion",
-							"value": "2022-11-28"
-						},
-						{
-							"key": "label",
-							"value": "bag"
-						},
-						{
-							"key": "assignee",
-							"value": "maria.malova@mail.ru"
-						},
-						{
-							"key": "Cookie",
-							"value": "token_global={{token_global}}"
-						}
-					],
-					"hash": "about-issues."
+			"url": "https://api.github.com/repos/MariaMalova/my-portfolio/pulls?assignee=maria.malova@mail.ru&label=bug",
+			"time": 177,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
 				}
 			},
-			"response": []
+			"times": [
+				177
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
 		},
 		{
+			"id": "c71b4855-038c-4759-9ee2-0f6c2c00f05b",
 			"name": "Issue 2",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{URL}}issues?apiVersion=2022-11-28&label=bag&assignee=maria.malova@mail.ru#about-issues.",
-					"host": [
-						"{{URL}}issues"
-					],
-					"query": [
-						{
-							"key": "apiVersion",
-							"value": "2022-11-28"
-						},
-						{
-							"key": "label",
-							"value": "bag"
-						},
-						{
-							"key": "assignee",
-							"value": "maria.malova@mail.ru"
-						}
-					],
-					"hash": "about-issues."
+			"url": "https://api.github.com/repos/MariaMalova/my-portfolio/pulls?assignee=maria.malova@mail.ru&label=bug",
+			"time": 169,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
 				}
 			},
-			"response": []
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
 		},
 		{
+			"id": "438b85ed-c4cb-4bfb-b03c-1ea841e7340c",
+			"name": "Get Issue",
+			"url": "https://api.github.com/repos/MariaMalova/my-portfolio/pulls/PULL_NUMBER",
+			"time": 169,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
+		},
+		{
+			"id": "c76f99fb-dad8-4402-a384-a72648e42197",
 			"name": "Issue 2 Delete",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "{{URL}}issues?apiVersion=2022-11-28&label=bag&assignee=maria.malova@mail.ru#about-issues.",
-					"host": [
-						"{{URL}}issues"
-					],
-					"query": [
-						{
-							"key": "apiVersion",
-							"value": "2022-11-28"
-						},
-						{
-							"key": "label",
-							"value": "bag"
-						},
-						{
-							"key": "assignee",
-							"value": "maria.malova@mail.ru"
-						}
-					],
-					"hash": "about-issues."
+			"url": "https://api.github.com/repos/MariaMalova/my-portfolio/pulls",
+			"time": 169,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 200": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 0,
+					"fail": 1
 				}
 			},
-			"response": []
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 200": false
+				}
+			]
 		}
 	],
-	"event": [
-		{
-			"listen": "prerequest",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					""
-				]
+	"count": 1,
+	"totalTime": 684,
+	"collection": {
+		"requests": [
+			{
+				"id": "c80f1b0f-305e-4cae-8bca-0e74dfb9fd4f",
+				"method": "POST"
+			},
+			{
+				"id": "c71b4855-038c-4759-9ee2-0f6c2c00f05b",
+				"method": "PATCH"
+			},
+			{
+				"id": "438b85ed-c4cb-4bfb-b03c-1ea841e7340c",
+				"method": "GET"
+			},
+			{
+				"id": "c76f99fb-dad8-4402-a384-a72648e42197",
+				"method": "POST"
 			}
-		},
-		{
-			"listen": "test",
-			"script": {
-				"type": "text/javascript",
-				"exec": [
-					"pm.test(\"Status code is 200\", function () {",
-					"    pm.response.to.have.status(200);",
-					"});"
-				]
-			}
-		}
-	],
-	"variable": [
-		{
-			"key": "URL",
-			"value": "https://docs.github.com/en/rest/issues/",
-			"type": "string"
-		},
-		{
-			"key": "token_global",
-			"value": "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",
-			"type": "string"
-		}
-	]
+		]
+	}
 }
